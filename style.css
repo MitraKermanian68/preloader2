@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1rem;
+}
+
+.Preloader{
+    background-color: #01579B;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.Preloader.disapear{
+    animation: disapear 3s;
+}
+@keyframes disapear {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.Preloader .loader {
+    background: rgba(26, 26, 26,0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    animation: scale 1s infinite;
+}
+
+@keyframes scale {
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+
+.Preloader .loader2 {
+    background: rgba(26, 26, 26,0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    animation: scale2 1s infinite;
+    
+}
+
+@keyframes scale2 {
+    100%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+}
